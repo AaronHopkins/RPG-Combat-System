@@ -552,13 +552,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371667820}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.9063079, w: 0.42261827}
-  m_LocalPosition: {x: 0.2, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.6000019, w: 0.7999986}
+  m_LocalPosition: {x: 0.566, y: 0.515, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2106004485}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 130}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 73.74}
 --- !u!212 &371667822
 SpriteRenderer:
   serializedVersion: 2
@@ -630,6 +630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217dc3d16ec823e4c9bb0ec0357a3157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Sword
+  slahsAnimPrefab: {fileID: 824613214964717487, guid: 35a44e16607113a448ba503d586f4ff5, type: 3}
+  slashAnimSpawnPoint: {fileID: 957328635}
 --- !u!95 &371667824
 Animator:
   serializedVersion: 7
@@ -1263,6 +1265,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4313374289552720715, guid: 1f312e658daa8c64d916a459d9737999, type: 3}
   m_PrefabInstance: {fileID: 1772548186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &957328634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957328635}
+  m_Layer: 0
+  m_Name: SlashAnimSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &957328635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957328634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2106004485}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1001585298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3344483422831791283, guid: c05246fcab57a894bb355bdc36e2d3b4, type: 3}
@@ -1866,6 +1899,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 371667821}
+  - {fileID: 957328635}
   m_Father: {fileID: 68207408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2106004486
@@ -2060,6 +2094,6 @@ SceneRoots:
   - {fileID: 68207408}
   - {fileID: 5939957669148184863}
   - {fileID: 653384014}
-  - {fileID: 451606693}
   - {fileID: 137274756}
   - {fileID: 807746656}
+  - {fileID: 451606693}
