@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 3355531131260747796}
   - component: {fileID: 8873080419950177724}
   - component: {fileID: 8773765046580038815}
+  - component: {fileID: 4997341784044264176}
+  - component: {fileID: 3845965953017331385}
+  - component: {fileID: 3156029751747452461}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -185,6 +188,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPathfinding
   moveSpeed: 2
+--- !u!114 &4997341784044264176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938644215627964307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157ac625fa2439e43ab9e1b8cc7304fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  startingHealth: 3
+--- !u!114 &3845965953017331385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938644215627964307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1efde0041d23454199f68813c3f23e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Knockback
+  knockBackTime: 0.2
+--- !u!114 &3156029751747452461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938644215627964307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9fa28c6871cb09459d638c0a5f6b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flash
+  whiteFlashMat: {fileID: 2100000, guid: d76c961d64640cb44bb2f883e49667aa, type: 2}
+  restoreDefaultMatTime: 0.1
 --- !u!1 &8610314804457983919
 GameObject:
   m_ObjectHideFlags: 0
