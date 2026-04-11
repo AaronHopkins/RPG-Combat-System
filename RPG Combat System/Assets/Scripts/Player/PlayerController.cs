@@ -8,6 +8,8 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
+    [SerializeField] private Transform weaponCollider;
+    [SerializeField] private Transform slashAnimation;
 
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -45,6 +47,17 @@ public class PlayerController : Singleton<PlayerController>
         AdjustPlatyerFacingDirection();
         Move();
     }
+
+    public Transform GetWeaponCollider()
+    {
+        return weaponCollider;
+    }
+    
+    public Transform GetSlashAnimationSpawn()
+    {
+        return slashAnimation;
+    }
+
     private void OnEnable() {
         playerControls.Enable();
     }
